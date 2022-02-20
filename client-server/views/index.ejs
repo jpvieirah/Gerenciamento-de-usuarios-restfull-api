@@ -139,7 +139,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
-              <table class="table table-striped" >
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     <th style="width: 10px">Foto</th>
@@ -152,6 +152,8 @@
                 </thead>
                 <tbody id="table-users">
 
+                                   
+                  
                 </tbody>
               </table>
             </div>
@@ -204,18 +206,18 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName">Nome</label>
-                  <input required type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
+                  <input type="text" required class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
                 </div>
                 <div class="form-group">
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM" value="M" name="gender" checked>
+                      <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked>
                       Masculino</label>
                   </div>
                   <div class="radio">
                     <label for="exampleInputGenderF">
-                      <input type="radio" id="exampleInputGenderF" value="F" name="gender">
+                      <input type="radio" id="exampleInputGenderF" name="gender" value="F">
                       Feminino</label>
                   </div>
                 </div>
@@ -227,7 +229,7 @@
                   <label for="exampleInputCountry">País</label>
                   <select class="form-control" id="exampleInputCountry" name="country">
                     <option value="" selected="selected">Selecione um país</option>
-                    <option value="United States" >United States</option>
+                    <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -472,11 +474,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">E-mail</label>
-                  <input required type="email" class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
+                  <input type="email" required class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Senha</label>
-                  <input requerid type="password" class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
+                  <input type="password" required class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
@@ -505,19 +507,19 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName-update">Nome</label>
-                  <input required type="text" class="form-control" id="exampleInputName-update" placeholder="Digite o nome do usuário" name="name">
+                  <input type="text" required class="form-control" id="exampleInputName-update" placeholder="Digite o nome do usuário" name="name">
                 </div>
                 <div class="form-group">
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM-update">
-                      <input type="radio" id="exampleInputGenderM-update" value="M" name="gender" checked>
-                      Masculino</label>
+                      <input type="radio" id="exampleInputGenderM-update" name="gender" value="M" checked> Masculino
+                    </label>
                   </div>
                   <div class="radio">
                     <label for="exampleInputGenderF-update">
-                      <input type="radio" id="exampleInputGenderF-update" value="F" name="gender">
-                      Feminino</label>
+                      <input type="radio" id="exampleInputGenderF-update" name="gender" value="F"> Feminino
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
@@ -528,7 +530,7 @@
                   <label for="exampleInputCountry-update">País</label>
                   <select class="form-control" id="exampleInputCountry-update" name="country">
                     <option value="" selected="selected">Selecione um país</option>
-                    <option value="United States" >United States</option>
+                    <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -773,11 +775,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1-update">E-mail</label>
-                  <input required type="email" class="form-control" id="exampleInputEmail-update" placeholder="Digite o e-mail" name="email">
+                  <input type="email" required class="form-control" id="exampleInputEmail-update" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1-update">Senha</label>
-                  <input requerid type="password" class="form-control" id="exampleInputPassword-update" placeholder="Crie uma senha" name="password">
+                  <input type="password" required class="form-control" id="exampleInputPassword-update" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
                   <img src="dist/img/boxed-bg.jpg" class="photo" style="max-height: 128px;">
@@ -790,13 +792,14 @@
                   </label>
                 </div>
               </div>
-              <!-- /.box-body -->          
+              <!-- /.box-body -->
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Salvar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
                 <button type="button" class="btn btn-default btn-cancel">Cancelar</button>
               </div>
             </form>
           </div>
+
         </div>
       </div>
 
@@ -817,6 +820,7 @@
 
 </div>
 
+<script src="classes/Fetch.js"></script>
 <script src="classes/HttpRequest.js"></script>
 <script src="classes/Utils.js"></script>
 <script src="models/User.js"></script>
